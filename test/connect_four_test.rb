@@ -1,7 +1,9 @@
-require 'test_helper'
+require "test_helper"
 
-class ConnectFourTest < ConnectFourSpec
-  def test_hello_world
-    assert_equal "hello world", ConnectFour.hello_world
+describe ConnectFour do
+  subject { ConnectFour }
+
+  it "runs" do
+    assert subject.run
   end
 end
