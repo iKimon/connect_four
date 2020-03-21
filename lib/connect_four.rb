@@ -1,5 +1,5 @@
 module ConnectFour
-  def self.hello_world
-    "hello world"
+  def self.run
+    true
   end
 end
