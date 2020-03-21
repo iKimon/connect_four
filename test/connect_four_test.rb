@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class ConnectFourTest < ConnectFourSpec
   def test_hello_world
