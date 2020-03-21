@@ -61,36 +61,29 @@ player o> 4
  .xxoox.x
 
 
-
-== Test driven development (TDD) with minitest
-
-  rake test
-
 == Setup
 
 Fork from https://github.com/neopoly/connect_four
 
   git clone git@github.com:YOURNAME/connect_four.git
   cd connect_four
-  # with rvm installed:
-  # ruby -v         # -> 2.7.0
-  bundle
-  rake
 
-== Environnment
+  gem install bundler
 
-=== Ruby
+  Install ruby-2.7.0 and ensure version with:
 
-  ruby-2.7.0
-
-=== Ruby version manager (rvm)
-
-  rvm install ruby-2.7.0
-  rvm use 2.7.0
   ruby -v # => 2.7.0
 
-=== Gems
+  Install dependencies with:
 
-  bundler # Gemfile
-  rake    # Rakefile
-  minitest
+  bundle
+
+== Test
+
+  rake test
+
+== Development
+
+A test driven approach is appreciated.
+
+Tests should be written with `minitest/spec` syntax using minitest assertions.
