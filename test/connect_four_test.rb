@@ -1,9 +1,9 @@
 require "test_helper"
 
 describe ConnectFour do
-  subject { ConnectFour }
+  #subject { ConnectFour }
 
   it "runs" do
-    assert subject.run
+    assert_equal true, ConnectFour.run
   end
 end
