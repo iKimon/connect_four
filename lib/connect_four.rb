@@ -14,6 +14,5 @@ module ConnectFour
       board.toggle_turn
       puts `clear`
     end
-    true
   end
 end
