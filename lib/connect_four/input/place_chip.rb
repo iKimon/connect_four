@@ -1,3 +1,5 @@
+require "connect_four/check_win"
+
 module ConnectFour
   module Input
     module PlaceChip
@@ -10,6 +12,12 @@ module ConnectFour
           player_chip = "o"
         end
         board.board[row][column] = player_chip
+        game_won = ConnectFour::CheckWin.check_win(board, row, column)
+        if game_won
+          return true
+        else
+          return false
+        end
       end
 
       def self.check_lowest_possible(column, board)
