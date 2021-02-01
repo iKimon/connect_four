@@ -5,7 +5,7 @@ module ConnectFour
     attr_reader :row_full
 
     def initialize
-      @board = Array.new(8) { Array.new(8, ".") }
+      @board = Array.new(8) { Array.new(8) { "." } }
       @row_full = Array.new(8, false)
       @p1_turn = false
     end
