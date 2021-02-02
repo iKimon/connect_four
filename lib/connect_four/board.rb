@@ -21,5 +21,9 @@ module ConnectFour
     def print_board
       ConnectFour::Output::TerminalPrinter.print_board(board)
     end
+
+    def self.row_full?(column)
+      row_full[column]
+    end
   end
 end
