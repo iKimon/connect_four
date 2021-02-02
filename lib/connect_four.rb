@@ -11,7 +11,7 @@ module ConnectFour
       board.toggle_turn
       ConnectFour::Output::TerminalPrinter.print_board(board)
       chosen_move = gets.chomp.to_i
-      chosen_move = ConnectFour::Input::PlaceChip.valid_move(chosen_move)
+      chosen_move = ConnectFour::Input::PlaceChip.get_valid_move(chosen_move, board)
       game_over = ConnectFour::Input::PlaceChip.place_chip(chosen_move - 1, board)
       #puts `clear`
     end

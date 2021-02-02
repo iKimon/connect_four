@@ -5,7 +5,7 @@ module ConnectFour
     attr_reader :row_full
 
     def initialize
-      @board = Array.new(8) { Array.new(8, ".") }
+      @board = Array.new(8) { Array.new(8) { "." } }
       @row_full = Array.new(8, false)
       @p1_turn = false
     end
@@ -20,6 +20,10 @@ module ConnectFour
 
     def print_board
       ConnectFour::Output::TerminalPrinter.print_board(board)
+    end
+
+    def self.row_full?(column)
+      row_full[column]
     end
   end
 end
